@@ -1,6 +1,6 @@
 function setDefault(a){
 			document.getElementById(a).style.boxShadow = "inset 0 0 0 2px #424446";
-			document.getElementById(a).style.color = "#222426";
+			document.getElementById(a).style.color = "#3a3a3a";
 		}
 		window.onload = setTimeout(function () {
 			setDefault("twitter");
