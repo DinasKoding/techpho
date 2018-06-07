@@ -93,7 +93,23 @@ a.menu{
   display: block;
   margin-top: 1%;
   /*text-align: center;*/
-  
+}
+
+a.menu span{
+  transition: color 0.3s linear;
+  /* vendorless fallback */
+
+  -o-transition: color 0.3s linear;
+  /* opera */
+
+  -ms-transition: color 0.3s linear;
+  /* IE 10 */
+
+  -moz-transition: color 0.3s linear;
+  /* Firefox */
+
+  -webkit-transition: color 0.3s linear;
+  /*safari and chrome */
 }
 
 #blackHole, #blackHole2{
@@ -108,11 +124,6 @@ a.menu:hover{
 a.menu:hover span{
   /*left: 16%;*/
   color: green;
-  -webkit-box-shadow: inset 0 0 0 0;
-  -moz-box-shadow: inset 0 0 0 0;
-  -o-box-shadow: inset 0 0 0 0;
-  -ms-box-shadow: inset 0 0 0 0;
-  box-shadow: inset 0 0 0 0;
 }
 
 .menu span{
@@ -1189,10 +1200,10 @@ section{
 
 .menu{
   opacity: 0;
-  animation: fadein 3s;
-  -moz-animation: fadein 3s; /* Firefox */
   -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -moz-animation: fadein 3s; /* Firefox */
   -o-animation: fadein 3s; /* Opera */
+  animation: fadein 3s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
@@ -1209,6 +1220,11 @@ section{
   -moz-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
   -o-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
   transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
+  /* -webkit-animation: color 1s;
+  -moz-animation: color 1s;
+  -o-animation: color 1s;
+  -ms-animation: color 1s;
+  animation: color 1s; */
 }
 
 #footer{
