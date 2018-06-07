@@ -89,5 +89,5 @@ function shinraTensei() {
 }
 
 function prepareEasterEgg() {
-	setTimeout(function() { document.getElementById("tombol").style.zIndex = "999"; }, 10000);
+	setTimeout(function() { document.getElementById("tombol").style.zIndex = "999"; }, 8500);
 }
