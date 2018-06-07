@@ -88,4 +88,4 @@ function shinraTensei() {
 	setTimeout(function() { blackHole(); }, 2100);
 }
 
-setTimeout(function holdEasterEgg() { document.getElementById("tombol").style.zIndex = "999"; }, 100);
+setTimeout(function holdEasterEgg() { document.getElementById("tombol").style.zIndex = "999"; }, 7000);
