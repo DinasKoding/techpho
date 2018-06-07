@@ -117,8 +117,9 @@ a.menu span{
 }
 
 a.menu:hover{
-  width: 110%;
-  left: -5%;
+  /* width: 110%; */
+  /* left: -5%; */
+  transform: scale(1.1);
 }
 
 a.menu:hover span{
@@ -1216,10 +1217,10 @@ section{
 }
 
 #linimasa, #kompetisi, #berita, #sejarah {
-  -webkit-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
-  -moz-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
-  -o-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
-  transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
+  -webkit-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 250ms ease-in;
+  -moz-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 250ms ease-in;
+  -o-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 250ms ease-in;
+  transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 250ms ease-in;
   /* -webkit-animation: color 1s;
   -moz-animation: color 1s;
   -o-animation: color 1s;

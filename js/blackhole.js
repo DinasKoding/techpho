@@ -57,7 +57,11 @@ function blackHole() {
 		  	document.getElementById("linimasa").style.transform = "scale(0)";
 		  	document.getElementById("berita").style.transform = "scale(0)";
 		  	document.getElementById("sejarah").style.transform = "scale(0)";
-		  	document.getElementById("kompetisi").style.transform = "scale(0)";
+			document.getElementById("kompetisi").style.transform = "scale(0)";
+			document.getElementById("linimasa").style.transitionDuration = "3s";
+			document.getElementById("berita").style.transitionDuration = "3s";
+			document.getElementById("sejarah").style.transitionDuration = "3s";
+			document.getElementById("kompetisi").style.transitionDuration = "3s";
 		  	document.getElementById("footer").style.transform = "scale(0)";
 		  	document.getElementById("footerleft").style.transform = "scale(0)";
 		  	document.getElementById("twitter").style.maxHeight = "0";
