@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="html" class="animated fadeIn">
 <head>
 
 	<meta charset="utf-8">
@@ -7,34 +7,23 @@
 	<title>TECHPHORIA 2018</title>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
 	<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="shortcut icon" href="images/favicon/logo.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-
-	<!-- modal tilt -->
-	<script>
-		function setDefault(a){
-			document.getElementById(a).style.boxShadow = "inset 0 0 0 2px #424446";
-			document.getElementById(a).style.color = "#222426";
-		}
-		window.onload = setTimeout(function () {
-			setDefault("twitter");
-			setDefault("instagram");
-			setDefault("facebook");
-			setDefault("line");
-		}, 4000);
-		function setHover(id, warna){
-			document.getElementById(id).style.boxShadow = "inset 0 0 0 30px #424446";
-			document.getElementById(id).style.color = warna;
-		}
-	</script>
-	
+	<script src="js/modaltilt.js"></script>
+	<!-- jQuery Plugin -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script src="js/blackhole.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="js/menujulangittakterbatas.js"></script>
 </head>
-<body>
+<body id="body">
 	<audio id="shinratensei" src="audio/shinratensei.mp3"></audio>
 	<audio id="boom" src="audio/boom.mp3"></audio>
+	<audio id="voiceshinratensei" src="audio/voiceshinratensei.mp3"></audio>
 
 	<!-- Preloader -->
 	<div id="preloader">
@@ -42,172 +31,83 @@
 	</div>
 	<!-- end of preloader -->
 
-	<div id="logo" class="container2" >
-		<img src="images/preloader/hmmmm2.png" class="arabesque ">
-		<img src="images/preloader/biru.png" class="arabesque second">
+	<div id="logo" class="container2">
+		<img id="sharingan" src="images/preloader/mangekyosharingan.png" class="arabesque sharingan">
+		<img src="images/preloader/hmmmm2.png" class="arabesque">
+		<img src="images/preloader/biru.png" class="arabesque second" onclick="shinraTensei()" style="z-index: 999;">
 		<img class="arabesque third" src="images/preloader/batik2.png">
 		<img class="arabesque empat" src="images/preloader/ring putus2.png">
 	</div>
 
-	<img src="images/bang.webp" alt="" style="opacity: 0; position: fixed;">
 	<img id="judul" class="judul depan" src="images/t.png">
+	<img src="images/bang.webp" alt="" style="opacity: 0; position: fixed;">
 
 	<div id="blackHole" class="containermenu depan">
-		<a href="#" class="menu" onclick="menu1()">
+		<a href="javascript:void(0)" class="menu" onclick="menujulangittakterbatas('https://imambungo.github.io/pweb2/')">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">Ini menu</span>
 		</a>
-		<a href="#" class="menu duo" onclick="menu2()">
+		<a id="duo" href="javascript:void(0)" class="menu duo" onclick="menujulangittakterbatas('https://imambungo.github.io/pweb2/')">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">menu 2</span>
 		</a>
 	</div>
 
 	<div id="blackHole2" class="containermenu kanan depan">
-		<a href="#" class="menu" onclick="menu3()">
+		<a href="javascript:void(0)" class="menu" onclick="menujulangittakterbatas('https://imambungo.github.io/pweb2/')">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">Ini menu</span>
 		</a>
-		<a href="#" class="menu duo" onclick="menu4()">
+		<a id="duos" href="javascript:void(0)" class="menu duo" onclick="menujulangittakterbatas('https://imambungo.github.io/pweb2/')">
 			<img src="images/awan1.png" alt="awan">
 			<span class="ease-all">menu 2</span>
 		</a>
 	</div>
 
-	<div class="footerleft">
+	<div id="footerleft" class="footerleft">
 		<section>
 		  <ul class="social">
 		    <li>
-		      	<a onmouseover='setHover("twitter","#1DA1F2")' onmouseleave='setDefault("twitter");' id="twitter" class="ease-all" target="_blank" href="https://twitter.com/techphoria18"><i class="fab fa-twitter"></i><span class="hide-text">Twitter</span></a>
+		      	<a onmouseover='setHover("twitter","#1DA1F2")' onmouseleave='setDefault("twitter");' id="twitter" target="_blank" href="https://twitter.com/techphoria18"><i class="fab fa-twitter"></i><span class="hide-text">Twitter</span></a>
 		    </li>
 		    <li>
-		      	<a onmouseover='setHover("instagram","#F01475")' onmouseleave='setDefault("instagram");' id="instagram" class="ease-all" target="_blank" href="https://www.instagram.com/technology.euphoria"><i class="fab fa-instagram"></i><span class="hide-text">Instagram</span></a>
+		      	<a onmouseover='setHover("instagram","#F01475")' onmouseleave='setDefault("instagram");' id="instagram" target="_blank" href="https://www.instagram.com/technology.euphoria"><i class="fab fa-instagram"></i><span class="hide-text">Instagram</span></a>
 		    </li>
 		    <li>
-		      	<a onmouseover='setHover("facebook","#4267B2")' onmouseleave='setDefault("facebook");' id="facebook" class="ease-all" target="_blank" href="https://www.facebook.com/techphoria.unsri"><i class="fab fa-facebook"></i><span class="hide-text">Facebook</span></a>
+		      	<a onmouseover='setHover("facebook","#4267B2")' onmouseleave='setDefault("facebook");' id="facebook" target="_blank" href="https://www.facebook.com/techphoria.unsri"><i class="fab fa-facebook"></i><span class="hide-text">Facebook</span></a>
 		    </li>
 		    <li>
-		      	<a onmouseover='setHover("line","#00B900")' onmouseleave='setDefault("line");' id="line" class="ease-all" target="_blank" href="http://line.me/ti/p/%40oob5672z"><i class="fab fa-line"></i><span class="hide-text">Line</span></a>
+		      	<a onmouseover='setHover("line","#00B900")' onmouseleave='setDefault("line");' id="line" target="_blank" href="http://line.me/ti/p/%40oob5672z"><i class="fab fa-line"></i><span class="hide-text">Line</span></a>
 		    </li>
 		  </ul>
 		</section>
 	</div>
 	
-	<div class="footer">
+	<div id="footer" class="footer">
 		<a class="sponsor" href="https://idcloudhost.com/" target="_blank">
 			Hosted by
-			<img class="idcloudhost" src="images/sponsor/idcloudhost.png" alt="ID CloudHost">
+			<img id="idcloudhost" class="idcloudhost" src="images/sponsor/idcloudhost.png" alt="ID CloudHost">
 		</a>
 	</div>
+
 	<div id="container" class="container">
 		<ul id="scene" class="scene">
 			<li class="layer transparan" data-depth="0.00"><img id="image1" src="images/backG.png"></li>
 			<li class="layer" data-depth="0.09"><img id="awan" src="images/awan.png"></li>
 			<li class="layer" data-depth="0.12"><img id="roket" src="images/roket.png"></li>
 			<li class="layer" data-depth="0.42"><img id="burung" src="images/burung.png"></li>
-			<li class="layer" data-depth="0.50"><img id="ampera" src="images/amperpanjang.png"></li>
+			<li class="layer transparan" data-depth="0.50"><img id="ampera" src="images/amperpanjang.png"></li>
 			<li class="layer transparan" data-depth="0.62"><img src="images/comingSoon.png"></li>
 			<li class="layer" data-depth="0.70"><img id="kapal" src="images/kapal.png"></li>
 			<li class="layer" data-depth="0.80"><img id="image7" src="images/banyu.png"></li>
 			<li class="layer" data-depth="0.80"><img id="image8" src="images/banyu.png"></li>
 		</ul>
 	</div>
+
 	<script src="parallax.js"></script>
 	<script>
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
-	</script>
-
-	<!-- jQuery Plugin -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-
-	<!-- Preloader -->
-	<script type="text/javascript">
-		//<![CDATA[
-		$(window).on('load', function () { // makes sure the whole site is loaded 
-			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-			$('body').delay(350).css({
-				'overflow': 'hidden'
-			});
-		})
-		//]]>
-	</script>
-
-	<!-- blackHole -->
-	<script>
-		function blackHole() {
-		  	document.getElementById("logo").style.width = "5%";
-		  	document.getElementById("blackHole").style.width = "0";
-		  	document.getElementById("blackHole2").style.width = "0";
-		  	document.getElementById("image1").style.width = "0";
-		  	document.getElementById("awan").style.width = "0";
-		  	document.getElementById("roket").style.width = "0";
-		  	document.getElementById("burung").style.width = "0";
-		  	document.getElementById("ampera").style.width = "0";
-		  	document.getElementById("kapal").style.width = "0";
-		  	document.getElementById("image7").style.width = "0";
-		  	document.getElementById("image8").style.width = "0";
-		  	document.getElementById("blackHole").style.top = "50%";
-		  	document.getElementById("blackHole2").style.top = "50%";
-		  	document.getElementById("image1").style.top = "50%";
-		  	document.getElementById("awan").style.top = "50%";
-		  	document.getElementById("roket").style.top = "50%";
-		  	document.getElementById("burung").style.top = "50%";
-		  	document.getElementById("ampera").style.top = "50%";
-		  	document.getElementById("kapal").style.top = "50%";
-		  	document.getElementById("image7").style.top = "100%";
-		  	document.getElementById("image8").style.top = "100%";
-		  	document.getElementById("blackHole").style.left = "50%";
-		  	document.getElementById("blackHole2").style.left = "50%";
-		  	document.getElementById("image1").style.left = "50%";
-		  	document.getElementById("awan").style.left = "50%";
-		  	document.getElementById("roket").style.left = "50%";
-		  	document.getElementById("burung").style.left = "50%";
-		  	document.getElementById("ampera").style.left = "50%";
-		  	document.getElementById("kapal").style.left = "50%";
-		  	// document.getElementById("image7").style.left = "50%";
-		  	// document.getElementById("image8").style.left = "50%";
-		  	document.getElementById("blackHole").style.maxHeight = "0";
-		  	document.getElementById("blackHole2").style.maxHeight = "0";
-		  	document.getElementById("image1").style.maxHeight = "0";
-		  	document.getElementById("awan").style.maxHeight = "0";
-		  	document.getElementById("roket").style.maxHeight = "0";
-		  	document.getElementById("burung").style.maxHeight = "0";
-		  	document.getElementById("ampera").style.maxHeight = "0";
-		  	document.getElementById("kapal").style.maxHeight = "0";
-		  	document.getElementById("image7").style.maxHeight = "0";
-		  	document.getElementById("image8").style.maxHeight = "0";
-		  	document.getElementById("blackHole").style.fontSize = "0";
-		  	document.getElementById("blackHole2").style.fontSize = "0";
-		  	document.getElementById("judul").src = '';
-		  	document.getElementById("shinratensei").play();
-		  	setTimeout(function() { document.getElementById("boom").play(); }, 5000);
-		  	document.body.style.backgroundColor = "black";
-
-		  	setTimeout(function() {
-		  		document.getElementById("logo").innerHTML = '<img id="booom" style="width:40vw; transform: translate(-45%, 1%);" src="images/bang.webp" alt="ledakan kosmik">'; 
-		  	}, 3999);
-		  	setTimeout(function() { document.getElementById("booom").src = "images/bang.webp" ; }, 4000);
-
-		  	setTimeout(function() { document.getElementById("logo").innerHTML = '';  }, 8110);
-		}
-
-		function menu1() {
-			setTimeout(function() { window.location.href = 'https://dinaskoding.github.io/techpho/'; }, 8107);
-			blackHole();
-		}
-		function menu2() {
-			setTimeout(function() { window.location.href = 'https://dinaskoding.github.io/techpho/'; }, 8107);
-			blackHole();
-		}
-		function menu3() {
-			setTimeout(function() { window.location.href = 'https://dinaskoding.github.io/techpho/'; }, 8107);
-			blackHole();
-		}
-		function menu4() {
-			setTimeout(function() { window.location.href = 'https://dinaskoding.github.io/techpho/'; }, 8107);
-			blackHole();
-		}
 	</script>
 </body>
 </html>
