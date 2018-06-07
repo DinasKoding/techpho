@@ -1243,3 +1243,28 @@ section{
   -o-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
   transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
 }
+
+@media screen and (orientation: portrait) {
+  .judul {
+    width: 55vw;
+    top: 11vw;
+  }
+  .containermenu {
+    top: 17%;
+    left: 10%;
+    width: 33%;
+  }
+  .kanan {
+    left: 58%;
+  }
+  .duo {
+    top: 17vw;
+  }
+  #blackHole,
+  #blackHole2 {
+    font-size: 9vw;
+  }
+  .menu span {
+    width: 33vw;
+  }
+}
