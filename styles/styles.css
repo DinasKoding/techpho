@@ -30,12 +30,16 @@
   transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out;
 }
 
-#footerleft{
+#footerleft, #ampera, #kapal{
   max-height: 5000px;
   -webkit-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out;
   -moz-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out;
   -o-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out;
   transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out;
+}
+
+#awan{
+  left: 0;
 }
 
 .menu img{
@@ -82,10 +86,6 @@ body {
 
 .kanan{
   left: 60%;
-}
-
-#blackHole:hover{
-  /*width: 30%;*/
 }
 
 a.menu{
@@ -1202,4 +1202,27 @@ section{
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+#linimasa, #kompetisi, #berita, #sejarah {
+  -webkit-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
+  -moz-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
+  -o-transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
+  transition:width 3000ms ease-in, top 3000ms ease-in, left 3000ms ease-in, max-height 3000ms ease-in, transform 3000ms ease-in;
+}
+
+#footer{
+  max-height: 5000px;
+  -webkit-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
+  -moz-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
+  -o-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
+  transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, right 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
+}
+
+#footerleft{
+  max-height: 5000px;
+  -webkit-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
+  -moz-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
+  -o-transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
+  transition:width 3000ms ease-in-out, bottom 3000ms ease-in-out, left 3000ms ease-in-out, max-height 3000ms ease-in-out, transform 3000ms ease-in;
 }

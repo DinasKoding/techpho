@@ -17,16 +17,16 @@ function blackHole() {
 		  	document.getElementById("blackHole").style.top = "50%";
 		  	document.getElementById("blackHole2").style.top = "50%";
 		  	document.getElementById("image1").style.top = "50%";
-		  	document.getElementById("awan").style.top = "50%";
+		  	document.getElementById("awan").style.top = "45%";
 		  	document.getElementById("roket").style.top = "50%";
 		  	document.getElementById("burung").style.top = "50%";
-		  	document.getElementById("ampera").style.top = "50%";
-		  	document.getElementById("kapal").style.top = "50%";
+		  	document.getElementById("ampera").style.bottom = "55%";
+		  	document.getElementById("kapal").style.bottom = "60%";
 		  	document.getElementById("image7").style.top = "130%";
 		  	document.getElementById("image8").style.top = "130%";
 		  	document.getElementById("judul").style.top = "50%";
-		  	document.getElementById("duo").style.top = "0";
-		  	document.getElementById("duos").style.top = "0";
+		  	document.getElementById("sejarah").style.top = "0";
+		  	document.getElementById("linimasa").style.top = "0";
 		  	document.getElementById("footer").style.bottom = "50%";
 		  	document.getElementById("footerleft").style.bottom = "50%";
 		  	document.getElementById("blackHole").style.left = "50%";
@@ -39,7 +39,7 @@ function blackHole() {
 		  	document.getElementById("kapal").style.left = "50%";
 		  	document.getElementById("judul").style.left = "50%";
 		  	document.getElementById("footer").style.right = "50%";
-		  	document.getElementById("footerleft").style.left = "50%";
+		  	document.getElementById("footerleft").style.left = "44%";
 		  	// document.getElementById("image7").style.left = "50%";
 		  	// document.getElementById("image8").style.left = "50%";
 		  	document.getElementById("blackHole").style.maxHeight = "0";
@@ -54,10 +54,12 @@ function blackHole() {
 		  	document.getElementById("image8").style.maxHeight = "0";
 		  	document.getElementById("judul").style.maxHeight = "0";
 		  	document.getElementById("idcloudhost").style.maxHeight = "0";
-		  	document.getElementById("blackHole").style.fontSize = "0";
-		  	document.getElementById("blackHole2").style.fontSize = "0";
-		  	document.getElementById("footer").style.fontSize = "0";
-		  	document.getElementById("footerleft").style.fontSize = "0";
+		  	document.getElementById("linimasa").style.transform = "scale(0)";
+		  	document.getElementById("berita").style.transform = "scale(0)";
+		  	document.getElementById("sejarah").style.transform = "scale(0)";
+		  	document.getElementById("kompetisi").style.transform = "scale(0)";
+		  	document.getElementById("footer").style.transform = "scale(0)";
+		  	document.getElementById("footerleft").style.transform = "scale(0)";
 		  	document.getElementById("twitter").style.maxHeight = "0";
 		  	document.getElementById("instagram").style.maxHeight = "0";
 		  	document.getElementById("facebook").style.maxHeight = "0";
@@ -66,8 +68,6 @@ function blackHole() {
 		  	document.getElementById("instagram").style.width = "0";
 		  	document.getElementById("facebook").style.width = "0";
 		  	document.getElementById("line").style.width = "0";
-		  	// document.getElementById("judul").src = '';
-		  	// document.getElementById("kapal").src = '';
 		  	document.getElementById("shinratensei").play();
 		  	setTimeout(function() { document.getElementById("sharingan").style.opacity = "0.55"; }, 500);
 		  	setTimeout(function() { document.getElementById("sharingan").style.zIndex = "1000"; }, 500);
@@ -88,4 +88,4 @@ function shinraTensei() {
 	setTimeout(function() { blackHole(); }, 2100);
 }
 
-setTimeout(function holdEasterEgg() { document.getElementById("tombol").style.zIndex = "999"; }, 10000);
+setTimeout(function holdEasterEgg() { document.getElementById("tombol").style.zIndex = "999"; }, 100);
