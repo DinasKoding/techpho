@@ -1247,10 +1247,10 @@ section{
 @media screen and (orientation: portrait) {
   .judul {
     width: 55vw;
-    top: 11vw;
+    top: 17%;
   }
   .containermenu {
-    top: 17%;
+    top: 27%;
     left: 10%;
     width: 33%;
   }
@@ -1266,5 +1266,15 @@ section{
   }
   .menu span {
     width: 33vw;
+  }
+  /* preloader */
+  .container2 {
+    width: 20vw;
+    height: 20vw;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 250;
   }
 }
