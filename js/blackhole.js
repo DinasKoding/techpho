@@ -81,7 +81,7 @@ function blackHole() {
 		  	setTimeout(function() {
 		  		document.getElementById("logo").innerHTML = '<img id="booom" style="width:40vw; transform: translate(-45%, 1%);" src="images/bang.webp" alt="ledakan kosmik">'; 
 		  	}, 3999);
-		  	setTimeout(function() { document.getElementById("booom").src = "images/bang.webp" ; }, 4000);
+		  	setTimeout(function() { document.getElementById("booom").src = "images/bang.gif" ; }, 4000);
 
 		  	setTimeout(function() { document.getElementById("logo").innerHTML = '';  }, 8110);
 		  	setTimeout(function() { location.reload(); }, 8111);
