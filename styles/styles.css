@@ -1201,11 +1201,11 @@ section{
 
 .menu{
   opacity: 0;
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -moz-animation: fadein 3s; /* Firefox */
-  -o-animation: fadein 3s; /* Opera */
-  animation: fadein 3s;
-  animation-delay: 2s;
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -moz-animation: fadein 2s; /* Firefox */
+  -o-animation: fadei2 3s; /* Opera */
+  animation: fadein 2s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 
