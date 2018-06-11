@@ -127,3 +127,15 @@ function isLandscape(){
     	return false
     }
 }
+
+function startAwan(){
+	document.getElementById("berita").className += " formenu";
+	document.getElementById("sejarah").className += " formenu";
+	document.getElementById("kompetisi").className += " formenu";
+	document.getElementById("linimasa").className += " formenu";
+}
+
+function loadFunction(){
+	prepareEasterEgg();
+	startAwan();
+}
